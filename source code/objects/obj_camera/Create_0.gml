@@ -11,6 +11,7 @@ camera = {
 	to_z: 0,
 	fov: 90,
 	aspect_ratio: window_get_width() / window_get_height(),
+	roll: 0
 };
 
 //test
@@ -156,4 +157,19 @@ function set_aspect_ratio_raw(_value) {
 
 function get_aspect_ratio() {
 	return self.camera.aspect_ratio;
+}
+
+/// @description		Change the camera roll effect.
+/// @param {Real}		_value		New roll value (by default 0, no move).
+/// @return {Undefined}
+
+function set_roll(_value) {
+	self.camera.roll = _value;
+}
+
+/// @description		Get the current camera roll.
+/// @return {Real}
+
+function get_roll() {
+	return self.camera.roll;
 }
