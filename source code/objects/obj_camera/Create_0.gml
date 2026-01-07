@@ -4,8 +4,6 @@
 #macro SKY_COLOR	make_colour_rgb(23, 23, 23)
 
 surf_prev = -1;
-surf_curr = -1;
-surf_output = -1;
 surf_w = -1;
 surf_h = -1;
 
