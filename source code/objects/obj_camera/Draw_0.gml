@@ -4,7 +4,7 @@
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 
-draw_clear(c_black);
+draw_clear(SKY_COLOR);
 
 var _camera = camera_get_active();
 

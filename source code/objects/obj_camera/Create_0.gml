@@ -1,13 +1,16 @@
 /// @description functions and vars
 
-#macro CAMERA obj_camera
+#macro CAMERA		obj_camera
+#macro SKY_COLOR	make_colour_rgb(23, 23, 23)
 
 surf_prev = -1;
-surf_w = display_get_width();
-surf_h = display_get_height();
+surf_curr = -1;
+surf_output = -1;
+surf_w = -1;
+surf_h = -1;
 
 blur_shader = shd_motion_blur;
-blur_amount = 0.5; // Float shader range 0.0 - 1.0
+blur_amount = 1.0; // Float shader range 0.0 - 1.0
 
 camera = {
 	x: 0,

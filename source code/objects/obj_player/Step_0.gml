@@ -14,7 +14,11 @@ if (mouse_lock)
 		window_mouse_set(window_get_width() * 0.5,  window_get_height() * 0.5);
 	}
 
-if keyboard_check_pressed(vk_escape) mouse_lock = !mouse_lock;
+if keyboard_check_pressed(vk_escape)
+	{
+		mouse_lock = !mouse_lock;
+		window_set_cursor(mouse_lock ? cr_none : cr_arrow);
+	}
 
 // player movement
 var _key_forward, _key_strafe, _spd;

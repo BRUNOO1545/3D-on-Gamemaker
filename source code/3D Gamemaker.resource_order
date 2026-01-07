@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_sky","order":1,"path":"objects/obj_sky/obj_sky.yy",},
     {"name":"shd_motion_blur","order":2,"path":"shaders/shd_motion_blur/shd_motion_blur.yy",},
     {"name":"spr_no_texture","order":1,"path":"sprites/spr_no_texture/spr_no_texture.yy",},
   ],
