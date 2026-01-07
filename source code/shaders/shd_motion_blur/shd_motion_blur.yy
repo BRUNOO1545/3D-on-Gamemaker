@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_motion_blur",
+  "name":"shd_motion_blur",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

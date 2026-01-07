@@ -17,9 +17,13 @@ if (mouse_lock)
 if keyboard_check_pressed(vk_escape) mouse_lock = !mouse_lock;
 
 // player movement
-var _key_forward, _key_strafe;
+var _key_forward, _key_strafe, _spd;
 _key_forward =	keyboard_check(ord("W")) - keyboard_check(ord("S"));
 _key_strafe =	keyboard_check(ord("A")) - keyboard_check(ord("D"));
+
+// player speed / boost
+_spd = player_spd;
+if keyboard_check(vk_shift) _spd = player_spd_boost;
 
 // normalize the diagonal input
 var _len = point_distance(0, 0, _key_forward, _key_strafe);
@@ -38,8 +42,8 @@ _yaw_sx = lengthdir_x(1, look_yaw + 90);
 _yaw_sy = lengthdir_y(1, look_yaw + 90);
 
 // make final vector and apply to current pos
-x += (_yaw_fx * _key_forward + _yaw_sx * _key_strafe) * player_spd;
-y += (_yaw_fy * _key_forward + _yaw_sy * _key_strafe) * player_spd;
+x += (_yaw_fx * _key_forward + _yaw_sx * _key_strafe) * _spd;
+y += (_yaw_fy * _key_forward + _yaw_sy * _key_strafe) * _spd;
 
 // Quake style camera roll
 var _target_roll = _key_strafe * -camera_roll_angle;

@@ -1,7 +1,8 @@
 /// @description vars
 
 z = -64;
-player_spd = 10;
+player_spd = 5;
+player_spd_boost = 10;
 
 look_yaw = 180;				// yaw: x rotation
 look_pitch = 180;			// pitch: z rotation

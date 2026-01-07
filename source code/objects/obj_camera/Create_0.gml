@@ -2,6 +2,13 @@
 
 #macro CAMERA obj_camera
 
+surf_prev = -1;
+surf_w = display_get_width();
+surf_h = display_get_height();
+
+blur_shader = shd_motion_blur;
+blur_amount = 0.5; // Float shader range 0.0 - 1.0
+
 camera = {
 	x: 0,
 	y: 0,
@@ -18,10 +25,6 @@ camera = {
 camera.z = 100;
 camera.to_x = room_width;
 camera.to_z = room_height;
-
-// GPU modes
-gpu_set_ztestenable(true);
-gpu_set_zwriteenable(true);
 
 #region vertext format setup
 
