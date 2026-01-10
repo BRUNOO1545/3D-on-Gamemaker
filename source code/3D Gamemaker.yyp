@@ -48,6 +48,7 @@
     {"id":{"name":"obj_sky","path":"objects/obj_sky/obj_sky.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_window_not_focus","path":"scripts/scr_window_not_focus/scr_window_not_focus.yy",},},
+    {"id":{"name":"shd_clouds","path":"shaders/shd_clouds/shd_clouds.yy",},},
     {"id":{"name":"shd_motion_blur","path":"shaders/shd_motion_blur/shd_motion_blur.yy",},},
     {"id":{"name":"spr_no_texture","path":"sprites/spr_no_texture/spr_no_texture.yy",},},
   ],
