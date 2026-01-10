@@ -2,7 +2,7 @@
 
 randomize();
 
-skybox_size = 64000; // Cloud shader map size
+skybox_size = 640000; // Cloud shader map size
 skybox_color = make_colour_rgb(0, 0, 0);
 skybox_speed_x = random_range(-1, 1);
 skybox_speed_y = random_range(-1, 1);
